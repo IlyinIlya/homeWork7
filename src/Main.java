@@ -1,4 +1,3 @@
-import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -45,13 +44,13 @@ public class Main {
         // численность населения будет через 10 лет, если показатели рождаемости и смертности постоянны.
         //В консоль выведите результат операции на каждый год в формате: «Год …, численность населения составляет …».
         int population = 12_000_000;
-        int peopleBirth = (17 * population) / 1000;
-        int peopleDie = (8 * population) / 1000;
-        int increasePopulation = peopleBirth - peopleDie; // естественный прирост населения
-        int year = 0;
+        // int peopleBirth = (17 * population) / 1000;
+        // nt peopleDie = (8 * population) / 1000;
+        int increasePopulation, year = 0;
         while (year < 10) {
+            increasePopulation = (9 * population) / 1000; // естественный прирост населения
             population = population + increasePopulation;
-            year++;
+            year ++;
             System.out.println("За " + year + " год, численность населения составляет " + population);
         }
 
@@ -149,7 +148,7 @@ public class Main {
             }
         }
         // 2 путь
-        System.out.println("");
+        System.out.println(" ");
         int nowYear = 2024;
         for (int astronomyYear = 0; astronomyYear < 5000; astronomyYear ++) {
             if (astronomyYear % 79 == 0 && astronomyYear >= nowYear - 200 && astronomyYear <= nowYear + 100) {
