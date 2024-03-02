@@ -29,11 +29,15 @@ public class Main {
         //В результате программы вывод должен получиться следующим:
         //1 2 3 4 5 6 7 8 9 10
         //10 9 8 7 6 5 4 3 2 1
-        for (int number = 1; number <= 10; number++) {
+
+        int number = 1;
+        while (number <= 10) {
             System.out.print(number + " ");
+            number ++;
         }
+
         System.out.println(" ");
-        for (int number = 10; number >= 1; number--) {
+        for (number = 10; number >= 1; number--) {
             System.out.print(number + " ");
         }
 
@@ -45,7 +49,7 @@ public class Main {
         //В консоль выведите результат операции на каждый год в формате: «Год …, численность населения составляет …».
         int population = 12_000_000;
         // int peopleBirth = (17 * population) / 1000;
-        // nt peopleDie = (8 * population) / 1000;
+        // int peopleDie = (8 * population) / 1000;
         int increasePopulation, year = 0;
         while (year < 10) {
             increasePopulation = (9 * population) / 1000; // естественный прирост населения
